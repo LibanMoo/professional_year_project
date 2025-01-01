@@ -1,0 +1,761 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+:root {
+    --color-background: #F7F7F7;
+    --color-danger: #FD5521;
+    --bg-nav: #28292B;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+}
+.container {
+    /* position: relative; */
+    width: 100%;
+    height: 135vh;
+    /* background-color: aqua; */
+}
+.container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25%;
+}
+.container .content nav {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    gap: 15%;
+    padding-left: 10%;
+    align-items: center;
+    /* background-color: aqua; */
+}
+.container .content nav .logo {
+    width: 120px;
+    height: 65px;
+    background-color: var(--bg-nav);
+    text-align: center;
+}
+.container .content nav .logo {
+    color: var(--color-white);
+    border: 1px solid var(--color-danger);
+}
+.container .content nav .links {
+    display: flex;
+    gap: 2px;
+    width: 55%;
+    height: 65px;
+    /* background-color: var(--bg-nav); */
+}
+.container .content nav .links .link {
+    width: 75%;
+    background-color: aqua;
+    border: 1px solid var(--color-danger)
+}
+.container .content nav .links ul {
+    background-color: var(--bg-nav);
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.container .content nav .links ul li {
+    width: 100%;
+    background-color: var(--bg-nav);
+    text-align: center;
+    padding-top: 20px;
+}
+.container .content nav .links ul li a {
+    /* background-color: aqua; */
+    color: var(--color-white);
+
+}
+.container .content nav .links ul li:hover{
+    background-color: var(--color-background);
+}
+.container .content nav .links ul li a:hover {
+    color: var(--bg-nav);
+}
+.container .content nav .links .btn {
+    width: 25%;
+    height: 100%;
+}
+.container .content nav .links .btn button {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: var(--color-danger);
+    border: none;
+}
+.container .content nav .links .btn button:hover {
+    background-color: var(--bg-nav);
+    color: var(--color-danger);
+    cursor: pointer;
+}
+/* .container nav .btn_links {
+    /* display: none; */
+    /* background-color: aqua; */
+/* }  */
+.container nav .btn_links i {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--color-danger);
+}
+.container .content .link_responsive {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-background);
+    /* position: relative; */
+}
+.container .content .link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    /* background-color: aqua; */
+    width: 100%;
+    height: 100%;
+}
+.container .content .link_responsive .link .icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* background-color: blue; */
+    font-size: 2em;
+    cursor: pointer;
+}
+.container .content .link_responsive ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.container .content .link_responsive ul li a {
+    font-size: 1.5em;
+    color: var(--color-black);
+}
+.container .content .link_responsive .btn {
+    width: 30%;
+    height: 10%;
+}
+.container .content  .link_responsive .btn button {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: var(--color-danger);
+    border: none;
+}
+.container .content .hero-section {
+    width: 60%;
+    height: 60%;
+    /* background-color: aqua; */
+    padding-left: 13%;
+}
+.container .content .hero-section .text {
+    /* background-color: blue; */
+    height: 70%;
+    /* font-size: 9rem; */
+}
+.container .content .hero-section .text h1 {
+    font-size: 4.8em;
+    color: var(--color-white);
+}
+.container .content .hero-section .text h3 {
+    font-size: 1.5em;
+    color: var(--color-white);
+}
+.container .content .hero-section .buttons{
+    /* background-color: blue; */
+    height: 25%;
+    display: flex;
+    gap: 3%;
+}
+.container .content .hero-section .buttons button {
+    width: 30%;
+    height: 68%;
+    cursor: pointer;
+}
+.container .content .hero-section .buttons #btn1 {
+    background-color: var(--color-danger);
+    border: none;
+    color: var(--bg-nav);
+}
+.container .content .hero-section .buttons #btn1:hover {
+    background-color: var(--bg-nav);
+    border: 1px solid var(--color-danger);
+    color: var(--color-white);
+}
+.container .content .hero-section .buttons #btn2 {
+    background-color: transparent;
+    border: 1px solid var(--color-white);
+    color: var(--color-white);
+}
+.container .content .hero-section .buttons #btn2:hover {
+    background-color: var(--color-danger);
+    border: none;
+    color: var(--bg-nav);
+}
+.section1 {
+    width: 100%;
+    height: 160vh;
+    padding: 0px 10% 0px 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.section1 .first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* height: 20%; */
+    /* background-color: blue; */
+}
+.section1 .first .text {
+    line-height: 45px;
+}
+.section1 .first .text h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: var(--color-black);
+}
+.section1 .first .text h1 {
+    font-size: 2.4em;
+    width: 60% ;
+    color: var(--color-danger);
+}
+.section1 .first .btn {
+    width: 16%;
+    height: 50px;
+    /* background-color: aqua; */
+}
+.section1 .first .btn button {
+    width: 100%;
+    height: 100%;
+    /* padding: ; */
+    background-color: var(--color-danger);
+    color: var(--color-black);
+    border: none;
+}
+.section1 .first .btn button:hover {
+    background-color: var(--color-background);
+    border: 1px solid var(--color-black);
+    cursor: pointer;
+}
+.section1 .second {
+    display: flex;
+    align-items: center;
+    /* background-color: aqua; */
+    height: 90%;
+}
+.section1 .second .text-content {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.section1 .second .text-content .line {
+    width: 40px;
+    height: 1px;
+    background-color: var(--color-black);
+}
+.section1 .second .text-content .text-gap {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /* background-color: blue; */
+    width: 85%;
+    line-height: 29px;
+}
+.section1 .second .image {
+   width: 60%;
+   height: 100%;
+   /* background-attachment: fixed; */
+   /* background-image: url(../src/desktop/unfininshed_building.jpg); */
+}
+.section1 .second .image img {
+    width: 100%;
+    height: 100%;
+    /* background-attachment: fixed; */
+    /* background: fixed; */
+} 
+.section2 {
+    margin-top: 100px;
+    width: 100%;
+    height: 160vh;
+    padding: 0px 10% 0px 10%;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+     /* background-color: blue;  */
+}
+.section2 .image {
+    width: 60%;
+    height: 100%;
+    /* background-color: aqua; */
+    /* position: fixed; */
+}
+.section2 .image img {
+    width: 100%;
+    height: 100%;
+    /* position: fixed; */
+    background-attachment: fixed;
+}
+.section2 .text-content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.section2 .text-content .line {
+    width: 40px;
+    height: 1px;
+    background-color: var(--color-black);
+}
+.section2 .text-content .text-gap {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /* background-color: blue; */
+    width: 85%;
+    line-height: 29px;
+}
+.section3 {
+    margin-top: 100px;
+    width: 100%;
+    height: 160vh;
+    padding: 0px 10% 0px 0px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    /* background-color: blue;  */
+}
+.section3 .image1 {
+    width: 60%;
+    height: 100%;
+}
+.section3 .image1 img {
+    width: 100%;
+    height: 100%;
+}
+.section3 .text-content {
+    width: 40%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    /* align-items: center; */
+    gap: 20px;
+    /* background-color:aqua; */
+}
+.section3 .text-content .line {
+    width: 40px;
+    height: 1px;
+    background-color: var(--color-black);
+}
+.section3 .text-content .image2 {
+    width: 90%;
+    height: 60%;
+    /* background-color: orange; */
+}
+.section3 .text-content .image2 img {
+    width: 100%;
+    height: 100%;
+}
+.section3 .text-content .text_info {
+    width: 60%;
+    line-height: 29px;
+}
+.about {
+    margin-top: 100px;
+    width: 100%;
+    height: 140vh;
+    /* padding: 0px 10% 0px 10%; */
+    /* display: flex;
+    gap: 50px;
+    align-items: center; */
+    background-color: blue; 
+    position: relative;
+}
+.about .image {
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    /* background-color: aqua; */
+}
+.about .image img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+.about .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: absolute;
+    top: 0;
+    padding: 7% 10% 0px 10%;
+    /* z-index: 5; */
+    background: rgba(0, 0, 0, 0.6);;
+}
+.about .content .text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.about .content .text h3 {
+    font-size: 1.4em;
+    color: var(--color-white);
+}
+.about .content .text h1 {
+    font-size: 2.4em;
+    color: var(--color-danger);
+}
+.about .content .text p {
+    width: 45%;
+    line-height: 28px;
+    color: var(--color-white);
+}
+.about .content .milestones {
+    /* background-color: aqua; */
+    display: flex;
+    width: 70%;
+    gap: 7%;
+    height: 20%;
+}
+.about .content .milestones>div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.about .content .milestones h1 {
+    font-size: 4em;
+    color: var(--color-white);
+}
+.about .content .milestones p {
+    color: var(--color-white);
+}
+.about .content .milestones .line {
+    width: 50px;
+    height: 1px;
+    background-color: var(--color-white);
+}
+.about .content .signature {
+    /* background-color: aqua; */
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: start; */
+    /* align-items: center; */
+}
+.about .content .signature img {
+    height: 40%;
+    width: 20%;
+}
+.about .content .signature h3 {
+    color: var(--color-white);
+}
+.about .content .signature h4 {
+    color: var(--color-white);
+    font-size: 0.8em;
+    font-weight: 200;
+}
+footer {
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0px 10% 0px 10%;
+    /* align-items: ; */
+    /* background-color: aqua; */
+    margin-top: 50px;
+}
+footer .line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-black);
+}
+footer .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    /* background-color: blue; */
+    height: 40%;
+}
+footer .content .headOffice p {
+    /* background-color: green; */
+    width: 70%;
+}
+footer .content .socials {
+    display: flex;
+    flex-direction: column;
+}
+footer .content .socials a {
+    color: var(--color-black);
+}
+footer .content .inquiries p {
+    width: 55%;
+}
+footer .content .btn {
+    width: 20%;
+    height: 35%;
+    /* background-color: aqua; */
+}
+footer .content .btn button {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-danger);
+    color: var(--color-black);
+    border: none;
+}
+footer .content .btn button:hover {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-black);
+}
+footer .info {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 1500px){
+    .container .content .hero-section .text h1 {
+        font-size: 4em;
+    }
+}
+@media only screen and (max-width: 980px){
+    .container .content .hero-section .text h1 {
+        font-size: 3em;
+    }
+}
+/* @media only screen and (min-width: 480px){
+    
+} */
+/* @media only screen and (min-width: 480px){
+    .container .content nav .links {
+        display: none;
+    }
+    .container .content nav .btn_links {
+        display: flex;
+    }
+} */
+@media only screen and (max-width: 768px){
+    .container video{
+        width: 100%;
+        height: 100%;
+        /* background-color: aqua; */
+    }
+    /* .container .content {
+
+    } */
+    .container .content {
+        gap: 10%;
+    }
+    .container .content nav {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: space-between;
+        /* gap: 15%; */
+        padding: 0px 5% 0px 5%;
+        align-items: center;
+        /* background-color: aqua; */
+    }
+    .container .content nav .links {
+        display: flex;
+        cursor: pointer;
+    }
+    /* .container .content nav .btn_links {
+        display: none;
+    } */
+    .container .content .hero-section {
+        padding-left: 5%;
+        /* background-color: blue; */
+    }
+    /* .container .content .hero-section .text {
+        background-color: aqua;
+    } */
+    .container .content nav .links {
+        display: none;
+    }
+    .container .content nav .btn_links {
+        display: flex;
+    }
+    .container .content .hero-section .text h1 {
+        font-size: 3em;
+    }
+    .container .content .hero-section .buttons button {
+        width: 100%;
+        height: 68%;
+        cursor: pointer;
+    }
+    .section1 {
+        height: 190vh;
+        padding: 0px 5% 0px 5%;
+    }
+    .section1 .first {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: start;
+    }
+    .section1 .first .text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .section1 .first .text h1 {
+        font-size: 2em;
+    }
+    .section1 .first .btn {
+        width: 25%;
+        height: 50px;
+        /* background-color: aqua; */
+    }
+    .section1 .second {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* height: 90%; */
+    }
+    .section1 .second .image {
+        height: 55%;
+    }
+    .section1 .second .text-content .text-gap {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        /* background-color: blue; */
+        width: 100%;
+        line-height: 25px;
+        /* background-color: aqua; */
+    }
+    .section1 .second .text-content {
+        /* background-color: blue; */
+        width: 90%;
+    }
+    .section1 .second .text-content .text-gap p {
+        width: 100%;
+    }
+    .section1 .second .image {
+        width: 90%;
+    }
+    .section2 {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 5% 0px 5%;
+    }
+    .section2 .image {
+        width: 90%;
+        height: 70%;
+    }
+    .section2 .text-content {
+        /* background-color: aqua; */
+        width: 90%;
+    }
+    .section3 {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 5% 0px 5%;
+        height: 220vh;
+    }
+    .section3 .image1 {
+        width: 90%;
+        height: 60%;
+    }
+    .section3 .text-content {
+        /* background-color: aqua; */
+        width: 90%;
+    }
+    .section3 .text-content .text_info {
+        width: 90%;
+    }
+    .about .content .milestones>div {
+        /* display: flex; */
+        font-size: 0.6em;
+        
+    }
+    .about .content .text p {
+        width: 80%;
+    }
+    footer {
+        height: 100vh;
+    }
+    footer .content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        /* background-color: aqua; */
+        height: 90%;
+        align-items: start;
+
+    }
+    footer .content>div {
+        line-height: 30px;
+    }
+    footer .content .headOffice p {
+        width: 100%;
+    }
+    footer .content .inquiries p {
+        width: 70%;
+    }
+    footer .content .btn {
+        width: 35%;
+        height: 12%;
+        /* background-color: aqua; */
+    }
+    
+}
+@media only screen and (max-width: 480) {
+        .section2 {
+            margin-top: 140px;
+        }
+}
+@media only screen and (min-width: 768px ){
+    .container .content nav {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        gap: 15%;
+        padding-left: 10%;
+        align-items: center;
+        /* background-color: aqua; */
+    }
+    .container .content nav .links {
+        display: flex;
+    }
+    .container .content nav .btn_links {
+        display: none;
+    }
+}
+
+/* @media only screen and (max-width: 800){
+    .container .content .hero-section .text h1 {
+        font-size: 2.3emem;
+    }
+    .container .content .hero-section .text h3 {
+        font-size: 1em;
+    }
+    .container .content .hero-section .buttons{
+        /* gap: ; */
+        /* background-color: aqua; */
+    /* } */
+    /* .container .content .hero-section .buttons button {
+        width: 20%;
+    } */
